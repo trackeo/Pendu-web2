@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Pendu</title>
+</head>
+<body>
+	<form class="" action="index.html" method="post">
+		<input id='input' type="text" name="" value="">
+		<input id='submit' type="submit" value="Submit">
+	</form>
+<script type="text/javascript">
+	var mots = [
+		"manger",
+		"boire",
+		"cacahuete",
+		"chemise",
+		"stylo"
+	];
+
+
+function selectword () {
+	var rand = mots[Math.floor(Math.random() * mots.length)];
+	console.log(rand);
+}
+selectword();
+
+function verif () {
+var lettre = document.getElementById("input").value;
+alert(lettre);
+}
+
+function submit() {
+     var submit = document.getElementById("submit");
+     submit.addEventListener("click", verif ,false);
+   }
+submit();
+</script>
+</body>
+</html>
